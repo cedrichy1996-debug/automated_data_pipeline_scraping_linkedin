@@ -20,14 +20,14 @@ pd.set_option('display.max_columns', 10)
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
 
 # add credentials to the account
-creds = ServiceAccountCredentials.from_json_keyfile_name('linkedinupdate-28ab8d2b40be.json', scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name('.....', scope)
 # print(creds)
 
 # authorize the clientsheet
 client = gspread.authorize(creds)
 
 # get the instance of LinkedIn scrape
-raise_scrape = client.open('Oct 2025 - VSAI All Time Scrape')
+raise_scrape = client.open('...')
 
 # read LinkedIn scrape data
 linkedin_instance = raise_scrape.get_worksheet(0)
@@ -46,7 +46,7 @@ linkedin_df = pd.DataFrame.from_records(linkedin_data[1:], columns=headers, inde
 # print(linkedin_df.columns)
 
 # read raise gsheet
-raise_outcome_gsheet = client.open('All-time VSAI Scrape List')
+raise_outcome_gsheet = client.open('...')
 
 # get the Researcher Outcomes sheet of the Spreadsheet
 raise_outcome = raise_outcome_gsheet.get_worksheet(0)
@@ -645,4 +645,4 @@ for index, row in raise_df.iterrows():
 
 
 # save the new researcher data locally
-raise_df.to_csv('All-time VSAI Scrape.csv')
+raise_df.to_csv('....csv')
