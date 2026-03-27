@@ -25,13 +25,13 @@ Skills (when available)
 
 These features can be used to support talent analysis, professional network analysis, or predictive modeling tasks.
 
-The processed dataset can be used for:
+# The processed dataset can be used for:
 Talent analytics
 Career trajectory modeling
 Skill demand analysis
 Future Improvements
 
-Potential enhancements include:
+# Potential enhancements include:
 
 Expanding the pipeline to handle larger profile datasets
 Implementing automated scheduling for periodic data collection
